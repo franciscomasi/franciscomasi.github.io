@@ -1,14 +1,3 @@
-/* -----------------------------------------------------------------------------
-
-Mi. - Ultimate Personal Resume vCard Template
-
-File:           JS Core
-Version:        1.3
-Last change:    20/07/16 
-Author:         Suelo
-
--------------------------------------------------------------------------------- */
-
 'use strict';
 
 var Mi = {
@@ -129,16 +118,6 @@ var Mi = {
             var $body = $('body');
             var scrollOffset = 0;
             if ($body.hasClass('header-horizontal')) scrollOffset = -headerHeight;
-
-            var $scrollers = $('#header, #mobile-nav, [data-target="local-scroll"]');
-            $scrollers.find('a').on('click', function(){
-                $(this).blur();
-            });
-            $scrollers.localScroll({
-                offset: scrollOffset,
-                duration: 800,
-                easing: $('#content').data('scroll-easing')
-            });
 
             var $menuItem = $('#main-menu li > a, #mobile-nav li > a');
             var checkMenuItem = function(id) {
