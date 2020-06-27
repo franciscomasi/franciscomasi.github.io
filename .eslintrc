@@ -1,22 +1,22 @@
 {
-  "extends": [
-    "standard",
-    "standard-react",
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ], // se usa por defecto el standard (https://standardjs.com/)
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["prettier"],
   "parser": "babel-eslint",
-  "plugins":[
-    "react"
-  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
   "rules": {
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "brace-style": ["error", "stroustrup"],
-    "padded-blocks": ["error", { "blocks": "never" }],
-    "eqeqeq": 0,
-    "no-class-assign": 2,
-    "no-tabs": 0,
-    "no-debugger": 0
+    "strict": 0,
+    "indent": ["error", 2],
+    "semi": ["error", "never"]
   }
 }
