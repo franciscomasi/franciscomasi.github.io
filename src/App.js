@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Dependencies
+import React from 'react'
+import styled from 'styled-components'
+
+// Components
+import Header from 'components/Sections/Header'
+import Hello from 'components/Sections/Hello'
+import Resume from 'components/Sections/Resume'
+import Skills from 'components/Sections/Skills'
+
+const AppContainer = styled.div`
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <AppContainer>
+    <Header />
+    <Hello />
+    <Resume />
+    <Skills />
+  </AppContainer>
 }
 
-export default App;
+export default App
