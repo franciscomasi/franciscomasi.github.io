@@ -7,6 +7,8 @@ import Header from 'components/Sections/Header'
 import Hello from 'components/Sections/Hello'
 import Resume from 'components/Sections/Resume'
 import Skills from 'components/Sections/Skills'
+import Experience from 'components/Sections/Experience'
+import Trainings from 'components/Sections/Trainings'
 
 const AppContainer = styled.div`
   background: #ffffff;
@@ -21,6 +23,8 @@ function App() {
     <Hello />
     <Resume />
     <Skills />
+    <Experience />
+    <Trainings />
   </AppContainer>
 }
 

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 
 // Components
-import { Container } from 'components/Shared/AppStyle'
+import { Container, Section } from 'components/Shared/AppStyle'
 import SectionTitle from 'components/Texts/SectionTitle'
 import { SKILL_LIST } from 'constants/SkillList'
 import {
@@ -16,11 +16,6 @@ import {
   VCS,
   MANAGEMENT
 } from 'constants/Categories'
-
-const Section = styled.section`
-  padding: 60px 0;
-  width: 100%;
-`
 
 const SkillContainer = styled.div`
   display: flex;

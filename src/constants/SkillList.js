@@ -134,6 +134,18 @@ const backEnd = [
       BACK_END,
     ],
     text: 'API REST'
+  },
+  {
+    category: [
+      BACK_END,
+    ],
+    text: 'RSpec'
+  },
+  {
+    category: [
+      BACK_END,
+    ],
+    text: 'MiniTest'
   }
 ]
 

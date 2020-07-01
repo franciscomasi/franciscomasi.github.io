@@ -6,3 +6,8 @@ export const Container = styled.div`
   align-items: ${props => props.align || 'flex-start'};
   margin: 0 60px;
 `
+
+export const Section = styled.section`
+  padding: 60px 0;
+  width: 100%;
+`
