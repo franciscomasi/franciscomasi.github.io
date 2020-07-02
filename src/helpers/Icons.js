@@ -20,8 +20,6 @@ export function TrainingIcon({ icon }) {
     return <img src={ItQuality} alt='Logo de empresa IT Quality' />
   case 'iaia':
     return <img src={Iaia} alt='Logo de empresa IAIA' />
-  case 'iab':
-    return <img src={Iab} alt='Logo de empresa IAB Spain' />
   case 'cessi':
     return <img src={Cessi} alt='Logo de empresa CESSI' />
   case 'iram':

@@ -1,5 +1,4 @@
 import {
-  ALL,
   FRONT_END,
   BACK_END,
   LANGUAGES,

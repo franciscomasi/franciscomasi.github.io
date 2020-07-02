@@ -37,6 +37,7 @@ const Skill = styled.div`
 const Filters = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   border-bottom: 2px solid #00f;
   margin-bottom: 20px;
   max-width: 1000px;
