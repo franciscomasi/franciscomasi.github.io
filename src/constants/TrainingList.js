@@ -37,7 +37,7 @@ export const TRAINING_LIST = [
     instructor: 'IT Quality',
     duration: '16 horas',
     icon: 'it_quality',
-    color: '#000'
+    color: '#221916'
   },
   {
     date: 'Junio 2015',
@@ -45,7 +45,7 @@ export const TRAINING_LIST = [
     instructor: 'IT Quality',
     duration: '24 horas',
     icon: 'it_quality',
-    color: '#000'
+    color: '#221916'
   },
   {
     date: 'Mayo 2015',

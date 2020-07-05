@@ -8,6 +8,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import { Container, Section } from 'components/Shared/AppStyle'
 import SectionTitle from 'components/Texts/SectionTitle'
 import { TRAINING_LIST } from 'constants/TrainingList'
+import { DESKTOP } from 'constants/ScreenSizes'
 import { TrainingIcon } from 'helpers/Icons'
 
 const StContainer = styled(Container)`
@@ -23,6 +24,14 @@ const StContainer = styled(Container)`
 
   .vertical-timeline-element-date {
     color: #181818;
+  }
+`
+
+const StTrainingIcon = styled(TrainingIcon)`
+  height: 28px;
+
+  @media all and (${DESKTOP}) {
+    height: 40px;
   }
 `
 
@@ -46,7 +55,7 @@ function Trainings() {
                 display: 'flex',
                 justifyContent: 'center'
               }}
-              icon={<TrainingIcon icon={training.icon} />}
+              icon={<StTrainingIcon icon={training.icon} />}
             >
               <h3 className="vertical-timeline-element-title">{training.name}</h3>
               <h4 className="vertical-timeline-element-subtitle">{training.instructor}</h4>
