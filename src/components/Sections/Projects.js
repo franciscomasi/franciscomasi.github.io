@@ -69,7 +69,7 @@ function Projects() {
 
   return <Section id='section-proyects'>
     <Container align='center' col>
-      <SectionTitle first='Mi' second='portfolio' />
+      <SectionTitle first='Mis' second='proyectos' />
       <ProjectsContainer>
         {PROJECT_LIST.map(project => {
           return <Project
