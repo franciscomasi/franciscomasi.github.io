@@ -10,6 +10,7 @@ import Text from 'components/Texts/Text'
 import ItQualityLogo from 'assets/images/jobs/it_quality.jpg'
 import AndeoItLogo from 'assets/images/jobs/andeo_it.jpg'
 import AeroLogo from 'assets/images/jobs/aero.jpg'
+import { TABLET } from 'constants/ScreenSizes'
 
 const JobsContainer = styled.div`
   display: flex;
@@ -26,7 +27,7 @@ const JobBox = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 360px;
-  margin: 0 20px 20px 0;
+  margin-bottom: 10px;
 
   > * {
     padding: 10px 20px;
@@ -44,6 +45,15 @@ const JobBox = styled.div`
   img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    max-width: 280px;
+  }
+
+  @media all and (${TABLET}) {
+    margin-right: 30px;
+
+    img {
+      max-width: max-content;
+    }
   }
 `
 
