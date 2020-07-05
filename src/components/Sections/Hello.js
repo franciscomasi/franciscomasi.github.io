@@ -84,7 +84,7 @@ function Hello() {
         </ContactButton>
       </Description>
       <ProfileImage>
-        <img src={Profile} alt='Mi foto de perfil' />
+        <img src={Profile} alt='Foto de perfil de francisco masi' />
       </ProfileImage>
     </StContainer>
   </Section>

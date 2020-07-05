@@ -2,16 +2,40 @@
 import React from 'react'
 import styled from 'styled-components'
 import moment from 'moment'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // Components
 import { Container } from 'components/Shared/AppStyle'
 import Paragraph from 'components/Texts/Paragraph'
 import Text from 'components/Texts/Text'
 import GradientButton from 'components/Buttons/GradientButton'
+import Profile from 'assets/images/profile/profile.jpg'
+import CV from 'assets/documents/cv.pdf'
+import { TABLET } from 'constants/ScreenSizes'
 
 const Section = styled.section`
   padding: 60px 0;
   width: 100%;
+`
+
+const ProfileImage = styled.div`
+  img {
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.15);
+    display: none;
+    margin-right: 15px;
+    max-height: 400px;
+  }
+
+  @media all and (${TABLET}) {
+    img {
+      display: flex;
+    }
+  }
+`
+
+const Information = styled.div`
+  max-width: 500px;
 `
 
 function Resume() {
@@ -19,14 +43,18 @@ function Resume() {
   const dateNow = moment()
   const expirience = dateNow.diff(initialYear, 'year')
 
+  function openFile() {
+    window.open(CV, '_blank')
+  }
+
   return <Section id='section-resume'>
-    <Container>
-      <div>
-        <img src="" alt=""/>
-      </div>
-      <div>
-        <Paragraph>
-          <Text featured>Soy un desarrollador Full Stack</Text> con más de&nbsp;
+    <Container align='center' justify='space-around'>
+      <ProfileImage>
+        <img src={Profile} alt='Foto de perfil de francisco masi' />
+      </ProfileImage>
+      <Information>
+        <Paragraph size={20}>
+          <Text size={20} featured>Soy un desarrollador Full Stack</Text> con más de&nbsp;
           {expirience} años de experiencia utilizando tencologías como 
           Symfony, Ruby On Rails y ReactJS.
         </Paragraph>
@@ -36,12 +64,13 @@ function Resume() {
           diseño y arquitectura del sistema, modelado de datos, programación, 
           testing e implementación y despliegue.
         </Paragraph>
-        <GradientButton>
+        <GradientButton handleOnClick={openFile}>
+          <FontAwesomeIcon icon='download' />&nbsp;
           <Text color={'#ffffff'} size={14}>
             Descargar CV
           </Text>
         </GradientButton>
-      </div>
+      </Information>
     </Container>
   </Section>
 }

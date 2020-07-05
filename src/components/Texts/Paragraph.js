@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 const StParagraph = styled.p`
   color: ${props => props.color};
   font-size: ${props => `${props.size}px`};
+  line-height: 1.4;
 `
 
 function Paragraph(props) {
