@@ -1,6 +1,9 @@
+// Dependencies
 import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+// Components
 import { URL_LINKEDIN, URL_GITHUB } from 'constants/SocialNetworks'
 import GoTop from 'components/Buttons/GoTop'
 

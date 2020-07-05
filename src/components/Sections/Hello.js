@@ -1,12 +1,14 @@
 // Dependencies
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // Components
 import { Container } from 'components/Shared/AppStyle'
 import Text from 'components/Texts/Text'
 import Profile from 'assets/images/profile/profile_head.jpg'
 import { TABLET, DESKTOP } from 'constants/ScreenSizes'
+import { URL_LINKEDIN, URL_GITHUB } from 'constants/SocialNetworks'
 
 const Section = styled.section`
   background: linear-gradient(to right, rgb(89, 141, 233), rgb(51, 41, 209));
@@ -29,13 +31,22 @@ const Description = styled.div`
   order: 1;
   width: 235px;
 
-  > span {
+  > * {
     margin-bottom: 20px;
   }
 `
 
+const FlexContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  
+  > * {
+    margin-right: 10px;
+  }
+`
+
 const ContactButton = styled.a`
-  background: #ffffff;
+  background: #fff;
   border: none;
   border-radius: 5px;
   display: flex;
@@ -65,6 +76,22 @@ const ProfileImage = styled.div`
   }
 `
 
+const SocialNetwork = styled.div`
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  height: 25px;
+  padding: 10px;
+  width: 25px;
+
+  > a {
+    color: #181818;
+  }
+`
+
 function Hello() {
   const [contactText, setContactText] = useState('Contactame')
   const email = 'francisco.masi@hotmail.com'
@@ -82,6 +109,18 @@ function Hello() {
             {contactText}
           </Text>
         </ContactButton>
+        <FlexContainer>
+          <SocialNetwork>
+            <a href={URL_LINKEDIN} target='_blank' rel='noopener noreferrer'>
+              <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
+            </a>
+          </SocialNetwork>
+          <SocialNetwork>
+            <a href={URL_GITHUB} target='_blank' rel='noopener noreferrer'>
+              <FontAwesomeIcon icon={["fab", "github"]} />
+            </a>
+          </SocialNetwork>
+        </FlexContainer>
       </Description>
       <ProfileImage>
         <img src={Profile} alt='Foto de perfil de francisco masi' />
