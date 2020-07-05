@@ -6,6 +6,10 @@ export const Container = styled.div`
   align-items: ${props => props.align || 'flex-start'};
   margin: 0 20px;
 
+  ${props => props.justify && `
+    justify-content: ${props.justify};
+  `}
+
   @media all and (min-width: 700px) {
     margin: 0 40px;
   }
@@ -16,6 +20,6 @@ export const Container = styled.div`
 `
 
 export const Section = styled.section`
-  padding: 90px 0;
+  padding: 100px 0;
   width: 100%;
 `
