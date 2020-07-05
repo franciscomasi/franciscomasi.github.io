@@ -42,7 +42,7 @@ const Filters = styled.div`
   margin-bottom: 20px;
   max-width: 1000px;
   padding: 10px;
-  width: 100%;  
+  width: 100%;
 `
 
 const FilterButton = styled.button`
@@ -51,7 +51,9 @@ const FilterButton = styled.button`
   border-bottom: ${props => props.selected && '2px solid #00f'};
   color: ${props => props.selected && '#00f'};
   cursor: pointer;
+  margin: 5px;
   outline: none;
+  text-transform: uppercase;
 `
 
 const CATEGORIES = [
