@@ -44,12 +44,15 @@ const Menu = styled.ul`
     &.my-name {
       font-size: 20px;
       order: 0;
+      padding: 15px 5px;
+      text-align: left;
       width: auto;
     }
 
     &.toggle {
       order: 1;
       font-size: 20px;
+      padding: 15px 5px;
       width: auto;
     }
   }

@@ -45,7 +45,7 @@ const JobBox = styled.div`
   img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    max-width: 280px;
+    max-width: calc(100%);
   }
 
   @media all and (${TABLET}) {
