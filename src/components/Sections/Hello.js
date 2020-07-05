@@ -8,7 +8,7 @@ import Text from 'components/Texts/Text'
 
 const Section = styled.section`
   background: linear-gradient(to right, rgb(89, 141, 233), rgb(51, 41, 209));
-  padding: 60px 0;
+  padding: 126px 0 60px;
   width: 100%;
 `
 

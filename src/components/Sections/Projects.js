@@ -1,11 +1,13 @@
 // Dependencies
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // Components
 import { Container, Section } from 'components/Shared/AppStyle'
 import SectionTitle from 'components/Texts/SectionTitle'
-import { PROJECTS } from 'constants/Proyects'
+import Text from 'components/Texts/Text'
+import { PROJECT_LIST } from 'constants/ProyectList'
 import { projectImage } from 'helpers/Images'
 
 const ProjectsContainer = styled.div`
@@ -31,7 +33,6 @@ const Project = styled.div`
   align-items: center;
   color: #fff;
   position: relative;
-  cursor: pointer;
   transition: .5s all;
 
   &:hover {
@@ -49,14 +50,47 @@ const Project = styled.div`
   }
 `
 
+const Description = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  position: absolute;
+
+  a {
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+`
+
 function Projects() {
+  const [showDescription, setShowDescription] = useState(null)
+
   return <Section>
     <Container align='center' col>
       <SectionTitle first='Mi' second='portfolio' />
       <ProjectsContainer>
-        {PROJECTS.map(project => {
-          return <Project>
+        {PROJECT_LIST.map(project => {
+          return <Project
+            key={`project-${project.name}`}
+            onMouseEnter={() => setShowDescription(project.name)}
+            onMouseLeave={() => setShowDescription(null)}
+          >
             {projectImage(project.name)}
+            {
+              showDescription === project.name && <Description>
+                <Text color='#fff' size={24}>{project.name}</Text>
+                {project.link && <a
+                  href={project.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <FontAwesomeIcon icon='link' />&nbsp;
+                  <Text color='#fff'>Ver proyecto</Text>
+                </a>}
+              </Description>
+            }
           </Project>
         })}
       </ProjectsContainer>

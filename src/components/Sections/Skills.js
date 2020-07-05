@@ -78,6 +78,7 @@ function Skills() {
         {
           CATEGORIES.map(filter => {
             return  <FilterButton
+              key={`filter-${filter}`}
               onClick={() => setSelectedFilter(filter)}
               selected={filter === selectedFilter}
             >

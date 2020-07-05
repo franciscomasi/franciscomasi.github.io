@@ -34,6 +34,7 @@ function Trainings() {
         {
           TRAINING_LIST.map(training => {
             return <VerticalTimelineElement
+              key={`training-${training.name}`}
               className="vertical-timeline-element--work"
               contentStyle={{ background: '#6317e2', color: '#fff' }}
               contentArrowStyle={{ borderRight: '7px solid #6317e2' }}
