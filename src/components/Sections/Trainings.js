@@ -27,7 +27,7 @@ const StContainer = styled(Container)`
 `
 
 function Trainings() {
-  return <Section>
+  return <Section id='section-trainings'>
     <StContainer align='center' col>
       <SectionTitle first='Mis' second='capacitaciones' />
       <VerticalTimeline className="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">

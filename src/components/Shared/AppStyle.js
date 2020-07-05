@@ -16,6 +16,6 @@ export const Container = styled.div`
 `
 
 export const Section = styled.section`
-  padding: 60px 0;
+  padding: 90px 0;
   width: 100%;
 `

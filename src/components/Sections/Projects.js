@@ -67,7 +67,7 @@ const Description = styled.div`
 function Projects() {
   const [showDescription, setShowDescription] = useState(null)
 
-  return <Section>
+  return <Section id='section-proyects'>
     <Container align='center' col>
       <SectionTitle first='Mi' second='portfolio' />
       <ProjectsContainer>

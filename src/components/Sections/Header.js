@@ -2,10 +2,12 @@
 import React, { useState } from 'react'
 import useWindowSize from 'hooks/useWindowSize'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // Components
 import { Container } from 'components/Shared/AppStyle'
 import { DESKTOP, DESKTOP_WITH, TABLET } from 'constants/ScreenSizes'
+import Text from 'components/Texts/Text'
 
 const AppHeader = styled.header`
   background: linear-gradient(to right, rgb(89, 141, 233), rgb(51, 41, 209));
@@ -98,32 +100,37 @@ function Header() {
     setOpenMenu(!openMenu)
   }
 
+  function renderLinks() {
+    return <>
+      <li><a href='#section-hello' onClick={toggleMenu}>Home</a></li>
+      <li><a href='#section-resume' onClick={toggleMenu}>Sobre mi</a></li>
+      <li><a href='#section-skills' onClick={toggleMenu}>Habilidades</a></li>
+      <li><a href='#section-experience' onClick={toggleMenu}>Experiencia</a></li>
+      <li><a href='#section-trainings' onClick={toggleMenu}>Capacitaciones</a></li>
+      <li><a href='#section-proyects' onClick={toggleMenu}>Proyectos</a></li>
+    </>
+  }
+
   return <AppHeader>
     <Container>
       <StNav>
         <Menu>
-          <li className='my-name'><a href="#">Francisco Masi</a></li>
+          <li className='my-name'><Text color='#fff' onClick={toggleMenu}>Francisco Masi</Text></li>
           {
             size.width < DESKTOP_WITH
               ? <>
-                {
-                  openMenu && <>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre mi</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Experiencia</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                  </>
-                }
-                <li className='toggle'><a href="#" onClick={toggleMenu}>##</a></li>
+                {openMenu && renderLinks()}
+                <li className='toggle'>
+                  <Text color='#fff' onClick={toggleMenu}>
+                    {
+                      openMenu
+                        ? <FontAwesomeIcon icon='times' />
+                        : <FontAwesomeIcon icon='bars' />
+                    }
+                  </Text>
+                </li>
               </>
-              : <>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Experiencia</a></li>
-                <li><a href="#">Proyectos</a></li>
-              </>
+              : renderLinks()
           }
         </Menu>
       </StNav>

@@ -20,7 +20,7 @@ function GradientButton(props) {
 }
 
 GradientButton.propTypes = {
-  handleOnClick: PropTypes.func.isRequired,
+  handleOnClick: PropTypes.func
 }
 
 export default memo(GradientButton)

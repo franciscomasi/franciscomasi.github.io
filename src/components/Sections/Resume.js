@@ -19,7 +19,7 @@ function Resume() {
   const dateNow = moment()
   const expirience = dateNow.diff(initialYear, 'year')
 
-  return <Section>
+  return <Section id='section-resume'>
     <Container>
       <div>
         <img src="" alt=""/>

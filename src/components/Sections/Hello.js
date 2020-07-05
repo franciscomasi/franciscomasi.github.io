@@ -35,7 +35,7 @@ const ContactButton = styled.button`
 `
 
 function Hello() {
-  return <Section>
+  return <Section id='section-hello'>
     <Container>
       <Description>
         <Text color={'#fff'} size={30}>Francisco Masi</Text>

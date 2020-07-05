@@ -71,7 +71,7 @@ function Skills() {
     ? SKILL_LIST.filter(skill => skill.category.includes(selectedFilter))
     : SKILL_LIST
 
-  return <Section>
+  return <Section id='section-skills'>
     <Container align='center' col>
       <SectionTitle first='Mis' second='habilidades' />
       <Filters>

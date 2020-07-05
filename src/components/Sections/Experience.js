@@ -48,7 +48,7 @@ const JobBox = styled.div`
 `
 
 function Experience() {
-  return <Section>
+  return <Section id='section-experience'>
     <Container align='center' col>
       <SectionTitle first='Mi' second='experiencia' />
       <JobsContainer>

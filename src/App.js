@@ -1,6 +1,6 @@
 // Dependencies
 import React from 'react'
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 // Components
 import initFontAwesome from 'utils/InitFontAwesome'
@@ -13,6 +13,21 @@ import Trainings from 'components/Sections/Trainings'
 import Projects from 'components/Sections/Projects'
 import Footer from 'components/Sections/Footer'
 
+const GlobalStyle = createGlobalStyle`
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+`
+
 const AppContainer = styled.div`
   background: #ffffff;
   display: flex;
@@ -24,6 +39,7 @@ initFontAwesome()
 
 function App() {
   return <AppContainer>
+    <GlobalStyle />
     <Header />
     <Hello />
     <Resume />
