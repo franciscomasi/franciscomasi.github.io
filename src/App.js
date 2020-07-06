@@ -11,6 +11,7 @@ import Skills from 'components/Sections/Skills'
 import Experience from 'components/Sections/Experience'
 import Trainings from 'components/Sections/Trainings'
 import Projects from 'components/Sections/Projects'
+import Interests from 'components/Sections/Interests'
 import Footer from 'components/Sections/Footer'
 
 const GlobalStyle = createGlobalStyle`
@@ -51,6 +52,7 @@ function App() {
     <Experience />
     <Trainings />
     <Projects />
+    <Interests />
     <Footer />
   </AppContainer>
 }

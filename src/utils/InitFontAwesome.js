@@ -5,7 +5,7 @@ import {
   faLink,
   faBars,
   faTimes,
-  faDownload
+  faDownload  
 } from '@fortawesome/free-solid-svg-icons'
 
 function initFontAwesome() {

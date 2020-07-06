@@ -111,6 +111,7 @@ function Header() {
       <li><a href='#section-experience' onClick={toggleMenu}>Experiencia</a></li>
       <li><a href='#section-trainings' onClick={toggleMenu}>Capacitaciones</a></li>
       <li><a href='#section-proyects' onClick={toggleMenu}>Proyectos</a></li>
+      <li><a href='#section-interests' onClick={toggleMenu}>Intereses y hobbies</a></li>
     </>
   }
 
