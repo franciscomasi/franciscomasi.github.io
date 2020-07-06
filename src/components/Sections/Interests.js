@@ -66,7 +66,7 @@ function Interests() {
       <InterestsContainer>
         {
           INTEREST_LIST.map(interest => {
-            return <Interest>
+            return <Interest key={`interest-${interest.name}`}>
               <Overlay />
               {interestImage(interest.image)}
               <Resume>

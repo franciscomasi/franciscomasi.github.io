@@ -111,12 +111,22 @@ function Hello() {
         </ContactButton>
         <FlexContainer>
           <SocialNetwork>
-            <a href={URL_LINKEDIN} target='_blank' rel='noopener noreferrer'>
+            <a
+              href={URL_LINKEDIN}
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Visitá mi perfil de LinkedIn'
+            >
               <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
             </a>
           </SocialNetwork>
           <SocialNetwork>
-            <a href={URL_GITHUB} target='_blank' rel='noopener noreferrer'>
+            <a
+              href={URL_GITHUB}
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Visitá mi perfil de GitHub'
+            >
               <FontAwesomeIcon icon={["fab", "github"]} />
             </a>
           </SocialNetwork>

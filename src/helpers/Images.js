@@ -1,20 +1,20 @@
 import React from 'react'
 
 // Projects
-import DiarioDeViaje from 'assets/images/projects/diario_de_viaje.jpg'
-import MpOrganizador from 'assets/images/projects/mp_organizador.jpg'
-import OiramIt from 'assets/images/projects/oiramit.jpg'
-import SegurosBenprof from 'assets/images/projects/seguros_benprof.jpg'
-import WebBenprof from 'assets/images/projects/web_benprof.jpg'
+import DiarioDeViaje from 'assets/images/projects/diario_de_viaje.webp'
+import MpOrganizador from 'assets/images/projects/mp_organizador.webp'
+import OiramIt from 'assets/images/projects/oiramit.webp'
+import SegurosBenprof from 'assets/images/projects/seguros_benprof.webp'
+import WebBenprof from 'assets/images/projects/web_benprof.webp'
 
 // Interests
-import Gym from 'assets/images/interests/gym.jpg'
-import Music from 'assets/images/interests/music_2.jpg'
-import Travel from 'assets/images/interests/travel.jpg'
-import Technology from 'assets/images/interests/technology.jpg'
-import Nutrition from 'assets/images/interests/nutrition.jpg'
-import Sport from 'assets/images/interests/sport.jpg'
-import DefaultInterest from 'assets/images/interests/example.jpg'
+import Gym from 'assets/images/interests/gym.webp'
+import Music from 'assets/images/interests/music.webp'
+import Travel from 'assets/images/interests/travel.webp'
+import Technology from 'assets/images/interests/technology.webp'
+import Nutrition from 'assets/images/interests/nutrition.webp'
+import Sport from 'assets/images/interests/sport.webp'
+import DefaultInterest from 'assets/images/interests/example.webp'
 
 export function projectImage(name) {
   switch (name) {
