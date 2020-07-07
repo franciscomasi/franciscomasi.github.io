@@ -5,7 +5,8 @@ export const TRAINING_LIST = [
     instructor: 'Udemy',
     duration: '25.5 horas',
     icon: 'udemy',
-    color: '#fff'
+    color: '#fff',
+    certificate: 'reactjs_redux_es6'
   },
   {
     date: 'Marzo 2018',
@@ -13,7 +14,8 @@ export const TRAINING_LIST = [
     instructor: 'Udemy',
     duration: '3 horas',
     icon: 'udemy',
-    color: '#fff'
+    color: '#fff',
+    certificate: 'bootstrap4_fundamentos'
   },
   {
     date: 'Marzo 2018',
@@ -21,7 +23,8 @@ export const TRAINING_LIST = [
     instructor: 'Udemy',
     duration: '2.5 horas',
     icon: 'udemy',
-    color: '#fff'
+    color: '#fff',
+    certificate: 'introduccion_a_docker'
   },
   {
     date: 'Mayo 2017',
@@ -29,7 +32,8 @@ export const TRAINING_LIST = [
     instructor: 'IAB Spain y Google',
     duration: '40 horas',
     icon: 'iab',
-    color: '#fff'
+    color: '#fff',
+    certificate: 'marketing_digital'
   },
   {
     date: 'Julio 2015',
@@ -53,7 +57,8 @@ export const TRAINING_LIST = [
     instructor: 'ENAI e IAIA',
     duration: '16 horas',
     icon: 'iaia',
-    color: '#2eaadc'
+    color: '#2eaadc',
+    certificate: 'enai_2015'
   },
   {
     date: 'Diciembre 2014',
@@ -93,7 +98,8 @@ export const TRAINING_LIST = [
     instructor: 'Educación BIZ',
     duration: '2 horas',
     icon: 'educacion_biz',
-    color: '#fff'
+    color: '#fff',
+    certificate: 'seminario_negociacion'
   },
   {
     date: 'Mayo 2014',
@@ -101,7 +107,8 @@ export const TRAINING_LIST = [
     instructor: 'Educación BIZ',
     duration: '2 horas',
     icon: 'educacion_biz',
-    color: '#fff'
+    color: '#fff',
+    certificate: 'seminario_liderazgo'
   },
   {
     date: 'Marzo 2014',
@@ -117,7 +124,8 @@ export const TRAINING_LIST = [
     instructor: 'SENA',
     duration: '40 horas',
     icon: 'sena',
-    color: '#fff'
+    color: '#fff',
+    certificate: 'calidad_sena'
   },
   {
     date: 'Noviembre 2013',
@@ -133,7 +141,8 @@ export const TRAINING_LIST = [
     instructor: 'IRAM',
     duration: '16 horas',
     icon: 'iram',
-    color: '#fff'
+    color: '#fff',
+    certificate: 'planificacion_iso9001'
   },
   {
     date: 'Julio 2013',
@@ -141,7 +150,8 @@ export const TRAINING_LIST = [
     instructor: 'IRAM',
     duration: '16 horas',
     icon: 'iram',
-    color: '#fff'
+    color: '#fff',
+    certificate: 'serie_iso9000'
   },
   {
     date: 'Noviembre 2012',

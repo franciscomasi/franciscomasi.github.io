@@ -1,15 +1,18 @@
 // Dependencies
 import React from 'react'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 
 // Components
 import { Container, Section } from 'components/Shared/AppStyle'
 import SectionTitle from 'components/Texts/SectionTitle'
+import Text from 'components/Texts/Text'
 import { TRAINING_LIST } from 'constants/TrainingList'
 import { DESKTOP } from 'constants/ScreenSizes'
 import { TrainingIcon } from 'helpers/Icons'
+import { certificate } from 'helpers/Documents'
 
 const StContainer = styled(Container)`
   .vertical-timeline {
@@ -35,7 +38,22 @@ const StTrainingIcon = styled(TrainingIcon)`
   }
 `
 
+const StButton = styled.button`
+  background: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 15px;
+  outline: none;
+  padding: 10px;
+`
+
 function Trainings() {
+  function openFile(filename) {
+    const file = certificate(filename)
+    window.open(file, '_blank')
+  }
+
   return <Section id='section-trainings'>
     <StContainer align='center' col>
       <SectionTitle first='Mis' second='capacitaciones' />
@@ -60,6 +78,14 @@ function Trainings() {
               <h3 className="vertical-timeline-element-title">{training.name}</h3>
               <h4 className="vertical-timeline-element-subtitle">{training.instructor}</h4>
               <p>{training.duration}</p>
+              {
+                training.certificate && <StButton
+                  onClick={() => openFile(training.certificate)}
+                >
+                  <FontAwesomeIcon icon='download' />&nbsp;
+                  <Text>Ver certificado</Text>  
+                </StButton>
+              }
             </VerticalTimelineElement>
           })
         }

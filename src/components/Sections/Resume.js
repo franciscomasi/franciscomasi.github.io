@@ -10,8 +10,8 @@ import Paragraph from 'components/Texts/Paragraph'
 import Text from 'components/Texts/Text'
 import GradientButton from 'components/Buttons/GradientButton'
 import Profile from 'assets/images/profile/profile.jpg'
-import CV from 'assets/documents/cv.pdf'
 import { TABLET } from 'constants/ScreenSizes'
+import { cv } from 'helpers/Documents'
 
 const Section = styled.section`
   padding: 60px 0;
@@ -44,7 +44,7 @@ function Resume() {
   const expirience = dateNow.diff(initialYear, 'year')
 
   function openFile() {
-    window.open(CV, '_blank')
+    window.open(cv(), '_blank')
   }
 
   return <Section id='section-resume'>
