@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // Components
 import { Container } from 'components/Shared/AppStyle'
 import Text from 'components/Texts/Text'
-import Profile from 'assets/images/profile/profile_head.jpg'
+import Profile from 'assets/images/profile/profile_head.png'
 import { TABLET, DESKTOP } from 'constants/ScreenSizes'
 import { URL_LINKEDIN, URL_GITHUB } from 'constants/SocialNetworks'
 
