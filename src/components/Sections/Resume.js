@@ -55,7 +55,7 @@ function Resume() {
       <Information>
         <Paragraph size={20}>
           <Text size={20} featured>Soy un desarrollador Full Stack</Text> con más de&nbsp;
-          {expirience} años de experiencia utilizando tencologías como 
+          {expirience} años de experiencia utilizando tecnologías como 
           Symfony, Ruby On Rails y ReactJS.
         </Paragraph>
         <Paragraph>
