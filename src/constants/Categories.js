@@ -1,8 +1,0 @@
-export const ALL = 'todas'
-export const FRONT_END = 'front-end'
-export const BACK_END = 'back-end'
-export const LANGUAGES = 'lenguajes'
-export const FRAMEWORKS = 'frameworks'
-export const ARCHITECTURE = 'arquitectura'
-export const VCS = 'vcs'
-export const MANAGEMENT = 'gestión'
