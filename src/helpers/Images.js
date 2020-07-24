@@ -16,6 +16,11 @@ import Nutrition from 'assets/images/interests/nutrition.webp'
 import Sport from 'assets/images/interests/sport.webp'
 import DefaultInterest from 'assets/images/interests/example.webp'
 
+// Jobs
+import ItQuality from 'assets/images/jobs/it_quality.jpg'
+import AndeoIt from 'assets/images/jobs/andeo_it.jpg'
+import Aero from 'assets/images/jobs/aero.jpg'
+
 export function projectImage(name) {
   switch (name) {
   case 'Diario de viaje':
@@ -49,5 +54,16 @@ export function interestImage(name) {
     return <img src={Sport} alt='Fotografia de una paleta de padel' />
   default:
     return <img src={DefaultInterest} alt='Fotografia monocromatica' />
+  }
+}
+
+export function jobImage(name) {
+  switch (name) {
+  case 'itQuality':
+    return <img src={ItQuality} alt='Logo de empresa IT Quality' />
+  case 'andeoIt':
+    return <img src={AndeoIt} alt='Logo de empresa AndeoIT' />
+  case 'aero':
+    return <img src={Aero} alt='Logo de empresa Aero' />
   }
 }
