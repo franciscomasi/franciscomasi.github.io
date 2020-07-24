@@ -53,7 +53,7 @@ function JobBox(props) {
     description
   } = props
 
-  return <Box key={`job-${image}`}>
+  return <Box>
     {jobImage(image)}
     <Text size={18}>{position}</Text>
     <Text size={14} featured>{date}</Text>

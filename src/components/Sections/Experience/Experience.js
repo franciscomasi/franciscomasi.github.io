@@ -23,6 +23,7 @@ function Experience() {
       <JobsContainer>
         {
           JOB_LIST.map(job => <JobBox
+            key={`job-${job.image}`}
             image={job.image}
             position={job.position}
             date={job.date}

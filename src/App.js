@@ -1,8 +1,9 @@
 // Dependencies
 import React from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 
 // Components
+import GlobalStyle from 'components/Shared/AppStyle'
 import initFontAwesome from 'utils/InitFontAwesome'
 import Header from 'components/Sections/Header'
 import Hello from 'components/Sections/Hello'
@@ -10,28 +11,9 @@ import Resume from 'components/Sections/Resume'
 import Skills from 'components/Sections/Skills'
 import Experience from 'components/Sections/Experience/Experience'
 import Trainings from 'components/Sections/Trainings'
-import Projects from 'components/Sections/Projects'
+import Projects from 'components/Sections/Projects/Projects'
 import Interests from 'components/Sections/Interests'
 import Footer from 'components/Sections/Footer'
-
-const GlobalStyle = createGlobalStyle`
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  html, body {
-    overflow-x:hidden 
-  } 
-`
 
 const AppContainer = styled.div`
   background: #ffffff;
