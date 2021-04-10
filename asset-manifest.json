@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.js": "/static/js/main.16db63ea.chunk.js",
-    "main.js.map": "/static/js/main.16db63ea.chunk.js.map",
+    "main.js": "/static/js/main.e3097fb3.chunk.js",
+    "main.js.map": "/static/js/main.e3097fb3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3988dce9.js",
     "runtime-main.js.map": "/static/js/runtime-main.3988dce9.js.map",
     "static/css/2.ac1ab58b.chunk.css": "/static/css/2.ac1ab58b.chunk.css",
-    "static/js/2.6895c6f8.chunk.js": "/static/js/2.6895c6f8.chunk.js",
-    "static/js/2.6895c6f8.chunk.js.map": "/static/js/2.6895c6f8.chunk.js.map",
+    "static/js/2.6cef1963.chunk.js": "/static/js/2.6cef1963.chunk.js",
+    "static/js/2.6cef1963.chunk.js.map": "/static/js/2.6cef1963.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.39b5c36a585ed8e7ae417984c81e7f66.js": "/precache-manifest.39b5c36a585ed8e7ae417984c81e7f66.js",
+    "precache-manifest.64b8723554c876e76a038b5c67e0f2fb.js": "/precache-manifest.64b8723554c876e76a038b5c67e0f2fb.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.ac1ab58b.chunk.css.map": "/static/css/2.ac1ab58b.chunk.css.map",
-    "static/js/2.6895c6f8.chunk.js.LICENSE.txt": "/static/js/2.6895c6f8.chunk.js.LICENSE.txt",
+    "static/js/2.6cef1963.chunk.js.LICENSE.txt": "/static/js/2.6cef1963.chunk.js.LICENSE.txt",
     "static/media/bootstrap4_fundamentos.pdf": "/static/media/bootstrap4_fundamentos.7b91b474.pdf",
     "static/media/calidad_sena.pdf": "/static/media/calidad_sena.9597d060.pdf",
     "static/media/cv.pdf": "/static/media/cv.51630344.pdf",
     "static/media/diario_de_viaje.webp": "/static/media/diario_de_viaje.eaee06c1.webp",
     "static/media/enai_2015.pdf": "/static/media/enai_2015.9dda520c.pdf",
     "static/media/example.webp": "/static/media/example.bba02e99.webp",
+    "static/media/fitness_app.webp": "/static/media/fitness_app.a76de3ac.webp",
     "static/media/gym.webp": "/static/media/gym.ebecf4fa.webp",
     "static/media/introduccion_a_docker.pdf": "/static/media/introduccion_a_docker.3c7041de.pdf",
     "static/media/marketing_digital.pdf": "/static/media/marketing_digital.b2cb4e07.pdf",
@@ -41,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.3988dce9.js",
     "static/css/2.ac1ab58b.chunk.css",
-    "static/js/2.6895c6f8.chunk.js",
-    "static/js/main.16db63ea.chunk.js"
+    "static/js/2.6cef1963.chunk.js",
+    "static/js/main.e3097fb3.chunk.js"
   ]
 }
